@@ -107,24 +107,111 @@
 // let IsItPalindrom = (string) => {
 //     var reservedWord = "";
 //     reservedWord = stringReverser(string);
-//     if (string = reservedWord){
+//     console.log(reservedWord)
+//     if (reservedWord == string){
 //         return "true"
 //     } else {
 //         return "false"
 //     }
 // }
-// console.log(IsItPalindrom("monster"))
+// console.log(IsItPalindrom("mum"))
 
 
 
 
-// // remove vowels
+// // remove dawhtsal
 
-const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
-let consonantContainer = [""];
-let removeVowels = (str) => {
-    for (let i = 0; i < str.lenght; i++){
-        
-    }
+// let removeGomoWords = (str) => {
+//     for(let i = 0; i < str.length; i++){
+//         for (let j = 0; j < str.length; j++){
+//             if (str[i] === str[j]){
+//                 newStringContainer += str[i]
+//             }
+//             return newStringContainer
+//         }
+//     }
+// } 
+// console.log(removeGomoWords("aabbbss"))
+
+
+
+// find the number
+
+
+// let findANumber = (x) => {
+//     return array.indexOf(x)
+// }
+
+
+// const x = 9
+// let number = 0;
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// number += findANumber(x);
+// console.log(number)
+
+// factorial
+
+
+// let factorial = (x) => {
+//     let result = 1;
+//     if (x > 0){
+//         for (let i = 1; i <= x; i++){
+//             result *= i
+//         }
+//     }
+//     return result
+// }
+
+
+// let n = 6;
+// if (n > 0){
+//     let hariu = factorial(n);
+//     console.log(hariu)
+// }
+
+// function remVowel(str) 
+// { 
+//     let vowels = [ 'a', 'e', 'i', 'o', 'u', 
+//                'A', 'E', 'I', 'O', 'U' ]; 
+//     let result = ""; 
+      
+//     for(let i = 0; i < str.length; i++)  
+//     { 
+          
+//         if (!vowels.includes(str[i])) 
+//         { 
+//             result += str[i]; 
+//         } 
+//     } 
+//     return result; 
+// } 
+// console.log(remVowel("hi it is me"))
+
+
+
+
+// // recursive tree sum
+
+let treeSum = {
+    value: 1,
+    children: 
+    [
+         { 
+            value: 2, children: [ { value: 3 }, { value: 4 }, ], 
+         }, 
+         {
+             value: 5, children: 
+             [
+                 { value: 6 },
+                  { value: 7, children: 
+                    [
+                         { value: 8 }, { value: 9 }, 
+                    ],
+                  }, 
+             ], 
+        } 
+    ]
 }
-console.log(removeVowels("pinecone"))
+
+let flattedArray = treeSum.children.flat();
+console.log(flattedArray)
