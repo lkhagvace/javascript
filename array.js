@@ -132,15 +132,23 @@
 //     if (specialNumbers[i] % 2 == 0) {
 //         evenNumbers.push(specialNumbers[i])
 //     }
-// } 
-// if (evenNumbers.length > oddNumbers.length){
-//     console.log(d)
-// } 
-// if (oddNumbers.length > evenNumbers.length) {
-//     console.log(d)
-// }
-// if ( oddNumbers.length == evenNumbers.length){
-//     console.log("there is no speacial number")
+//     } 
+//     if (evenNumbers.length > oddNumbers.length){
+//         for (let j = 0; j < specialNumbers.length; j++){
+//             if (specialNumbers[j] % 2 != 0){
+//                 console.log(specialNumbers.indexOf(specialNumbers[j]))
+//             }
+//         }
+//     } 
+//     if (oddNumbers.length > evenNumbers.length) {
+//         for (let k = 0; k < specialNumbers.length; k++){
+//             if (specialNumbers[k] % 2 == 0){
+//                 console.log(specialNumbers.indexOf(specialNumbers[k]))
+//             }
+//         }
+//     }
+//     if ( oddNumbers.length == evenNumbers.length){
+//         console.log("there is no speacial number")
 // }
 
 
@@ -151,34 +159,38 @@
 
 
 
-const cubeCheck = [
-    [2, 7, 6],
-    [9, 5, 1],
-    [4, 3, 8],
-]
-const sum = [0, 0, 0];
-const sum1 = [0, 0, 0];
-let sum3 = 0;
-let sum4 = 0;
-for (let i = 0; i < cubeCheck.length; i++){
-    for (let j = 0; j < cubeCheck.length; j++){
-        sum[i] += cubeCheck[i][j];
-    }
-}
-for (let k = 0; k < cubeCheck.length; k++){
-    for (let m = 0; m < cubeCheck.length; m++){
-        sum1[k] += cubeCheck[m][k]
-    }
-}
-sum4 += cubeCheck[0][2] + cubeCheck[1][1] +cubeCheck[2][0]
+// const cubeCheck = [
+//     [2, 7, 6],
+//     [9, 5, 1],
+//     [4, 3, 8],
+// ]
+// const sum = [0, 0, 0];
+// const sum1 = [0, 0, 0];
+// let sum3 = 0;
+// let sum4 = 0;
+// for (let i = 0; i < cubeCheck.length; i++){
+//     for (let j = 0; j < cubeCheck.length; j++){
+//         sum[i] += cubeCheck[i][j];
+//     }
+// }
+// for (let k = 0; k < cubeCheck.length; k++){
+//     for (let m = 0; m < cubeCheck.length; m++){
+//         sum1[k] += cubeCheck[m][k]
+//     }
+// }
+// sum4 += cubeCheck[0][2] + cubeCheck[1][1] +cubeCheck[2][0]
 
-for (let t = 0; t < cubeCheck.length; t++){
-    sum3 += cubeCheck[t][t]
-}
-console.log(sum[0],sum[1],sum[2],sum1[0],sum1[1],sum1[2], sum3 ,sum4)
-if (sum[0] == sum[1] == sum[2] == sum1[0] == sum1[1] == sum1[2] == sum3 == sum4){
-    console.log("yes")
-} else {
-    console.log("no")
-}
-console.log(sum[0],sum[1],sum[2],sum1[0],sum1[1],sum1[2], sum3 ,sum4)
+// for (let t = 0; t < cubeCheck.length; t++){
+//     sum3 += cubeCheck[t][t]
+// }
+// console.log(sum[0],sum[1],sum[2],sum1[0],sum1[1],sum1[2], sum3 ,sum4)
+// for (let f = 0; f < cubeCheck.length; f++){
+//     for (let g = 0; g < cubeCheck.length; g++){
+//         if(sum[f] == sum1[g] && sum3 == sum4 && sum[f] == sum3 && sum[f] == sum4 && sum1[f] == sum3 && sum1[f] == sum4){
+//             var d = "yes"
+//         }
+//         else d = "no"
+//     }
+// }
+// console.log(d)
+// console.log(sum[0],sum[1],sum[2],sum1[0],sum1[1],sum1[2], sum3 ,sum4)

@@ -23,14 +23,16 @@
 // // number pow
 
 // let n = 8;
-// let b = 0;
-// for(let i = 0; i < 11; i++){
-//     if (n ** i > 1000){
-        
-//     }
+// let urjwer = 0;
+// let zereg = 0;
+// if (n == 0 || n > 1000){
+//     console.log("bljmgui")
+// } else {
+//     while (urjwer < 1000){
+//         zereg++;
+//         urjwer = n ** zereg
+//     } console.log(n, "toonii",zereg, "ni 1000 aas ih baina")
 // }
-// console.log(n, "iin", b, "zereg ni 1000 aas ih baina")
-
 
 // // bubble sort
 
@@ -67,6 +69,7 @@
 // let n = 5;
 // let container = "";
 // for (let i = 1; i <= n; i++){
+
 //     container += "*";
 //     console.log(container)
 // }
@@ -114,12 +117,66 @@
 // console.log(fiboNumbers)
 
 
-// // is Palindrom
-
-let word = "check";
-let container = "";
 
 
-for (let i = 0; i < word.length; i++){
 
-}
+// // is primeNumber
+// let primeNumberChecker = 18;
+// let sum = 0;
+// for (let i = 2; i < ((primeNumberChecker / 2) + 0.5); i++){
+    // if (primeNumberChecker % i == 0){
+        // for (let j = 0; j < ((primeNumberChecker / 2) + 0.5); j++){
+            // if ( primeNumberChecker % j == 0){
+            //  sum += j
+            // }
+        //  }
+        // console.log(primeNumberChecker, 'is not PN and sum of dividable numbers of this number is:',sum);
+        // break;
+    // }
+    // if (primeNumberChecker % i != 0){
+        // console.log(primeNumberChecker, 'is PN')
+    // }
+// }
+
+
+
+// // palindrom string
+// const string = 'momomoom'
+// const len = string.length;
+// 
+// for (let i = 0; i < len / 2; i++) {
+// 
+    // if (string[i] !== string[len - 1 - i]) {
+        // console.log("its not palindrom")
+        // break
+    // }
+// }
+
+
+// // chess board
+
+// let chessNumber = 9;
+// let underLine = '_';
+// let chagt = '#';
+// let oneLineContainer = ''
+// let d = '';
+
+// for (let i = 0; i < chessNumber; i++){
+//     for (let j = 1; j <= chessNumber; j++){
+//         if (i % 2 == 0 && j % 2 != 0){
+//             oneLineContainer += underLine
+//         }
+//         if (i % 2 == 0 && j % 2 == 0){
+//             oneLineContainer += chagt
+//         }
+//         if (i % 2 != 0 && j % 2 == 0){
+//             oneLineContainer += underLine
+//         }
+//         if (i % 2 != 0 && j % 2 != 0){
+//             oneLineContainer += chagt
+//         }
+        
+//     }
+//     console.log(oneLineContainer)
+//     oneLineContainer ="";
+// }

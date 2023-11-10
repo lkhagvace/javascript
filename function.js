@@ -25,12 +25,6 @@
 
 
 
-// // dawhtsal
-
-
-// let dawhtsal = ()
-
-
 
 
 // // x^2 + 5x + 6
@@ -120,18 +114,23 @@
 
 
 // // remove dawhtsal
-
-// let removeGomoWords = (str) => {
-//     for(let i = 0; i < str.length; i++){
-//         for (let j = 0; j < str.length; j++){
-//             if (str[i] === str[j]){
-//                 newStringContainer += str[i]
-//             }
-//             return newStringContainer
-//         }
-//     }
-// } 
-// console.log(removeGomoWords("aabbbss"))
+erase("aaaaabbbcccd")
+function erase(string) {
+  const array = string.split("");
+  let l = array.length ;
+  for (let i = 0; i <= l; i++) {
+    for (let j = 0; j <= l; j++) {
+      if (array[i] == array[j]) {
+        if(i == j){
+          continue;
+        }
+        array.splice(j, 1)
+     }
+    }
+   }
+console.log(array);
+return array;
+}
 
 
 
@@ -192,26 +191,26 @@
 
 // // recursive tree sum
 
-let treeSum = {
-    value: 1,
-    children: 
-    [
-         { 
-            value: 2, children: [ { value: 3 }, { value: 4 }, ], 
-         }, 
-         {
-             value: 5, children: 
-             [
-                 { value: 6 },
-                  { value: 7, children: 
-                    [
-                         { value: 8 }, { value: 9 }, 
-                    ],
-                  }, 
-             ], 
-        } 
-    ]
-}
+// let treeSum = {
+//     value: 1,
+//     children: 
+//     [
+//          { 
+//             value: 2, children: [ { value: 3 }, { value: 4 }, ], 
+//          }, 
+//          {
+//              value: 5, children: 
+//              [
+//                  { value: 6 },
+//                   { value: 7, children: 
+//                     [
+//                          { value: 8 }, { value: 9 }, 
+//                     ],
+//                   }, 
+//              ], 
+//         } 
+//     ]
+// }
 
-let flattedArray = treeSum.children.flat();
-console.log(flattedArray)
+// let flattedArray = treeSum.children.flat();
+// console.log(flattedArray)
